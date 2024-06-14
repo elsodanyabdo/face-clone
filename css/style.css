@@ -1,0 +1,439 @@
+/* global rule  */
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+ul {
+    list-style: none;
+}
+/* global rule  */
+/* start nav  */
+nav {
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0px 10px 10px 0px #dfdfdf57;
+    height: 56px;
+    width: 100%;
+    position: fixed;
+    padding: 5px 5px 0;
+    background-color: white;
+    z-index: 5;
+}
+nav .left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 0px 0px 10px;
+}
+nav .left i{
+        font-size: 34px;
+    color: blue;
+}
+nav .left .input{
+        display: flex;
+    margin-left: 10px;
+    position: relative;
+}
+nav .left .input input{
+        border-radius: 50px;
+    width: 250px;
+    height: 40px;
+    padding: 0 0 0 30px;
+    background-color: #ebeaea;
+    border: none;
+}
+nav .left .input input:focus{
+    outline: none;
+}
+nav .left .input i{
+    position: absolute;
+    left: 10px;
+    font-size: 15px;
+    bottom: 12px;
+    color: #101010;
+}
+nav .med{
+        display: flex;
+    align-items: end;
+}
+nav .med a{
+    color: gray;
+    margin: 0 15px;
+    font-size: 25px;
+    padding: 5px 15px;
+    transition:all 0.2s ease;
+}
+nav .med a:hover:not(:first-child){
+    /* color: blue;
+    border-bottom: 2px solid blue; */
+    background-color: rgb(174, 172, 172);
+    border-radius: 5px;
+}
+nav .med .active{
+    color: blue;
+    border-bottom: 2px solid blue;
+}
+nav .right{
+    display: flex;
+}
+nav .right .portfolio{
+        display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+}
+nav .right .portfolio img{
+        width: 40px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+nav .right a{
+    display: flex;
+    text-decoration: none;
+    padding: 5px;
+}
+nav .right a i{
+    color: black;
+    background-color: #ebe8e8;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+        transition: all 0.2s ease;
+}
+nav .right a:hover i{
+    color: white;
+    background-color: black;
+}
+/* end nav  */
+/* start all section  */
+
+.all{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 60px;
+    background-color: #f0f2f5;
+}
+/* start col1 */
+.all .col1{
+    height: 100vh;
+    overflow: hidden;
+    position: sticky;
+    left: 0;
+    top: 0;
+    padding: 15px 8px;
+    width: 300px;
+    background-color: #f0f2f5;
+    transition: all 0.2s ease;
+    box-shadow: 10px 0px 10px 0px #beb9b957;
+    border-radius: 5px;
+}
+.all .col1:hover{
+    overflow: auto;
+}
+
+.all .col1 ul li{
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+}
+.all .col1 ul li img{
+        width: 30px;
+    border-radius: 50%;
+}
+.all .col1 ul li h3 {
+    font-size: 20px;
+    font-weight: 400;
+    margin-left: 16px;
+}
+/* end col1 */
+/* start col2 */
+
+.all .col2{
+    padding: 20px;
+    margin-right: 20px;
+} 
+
+/* start story */
+.all .col2 .story{
+    display: flex;
+    margin-top: 20px;
+}
+.all .col2 .story .main{
+    width: 150px;
+    height: 200px;
+    background-color: white;
+    overflow: hidden;
+    margin-left: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px 5px #ddd;
+    position: relative;
+}
+.all .col2 .story .profile1 .full{
+    width: 100%;
+    height: 70%;
+    border-radius: 10px;
+} 
+
+.all .col2 .story .profile1 a i{
+    position: absolute;
+    font-size: 20px;
+    padding: 8px;
+    color: white;
+    border-radius: 50%;
+    background-color: blue;
+    border: 4px solid white;
+    transform: translate(-50% , -50%);
+    top: 70%;
+    left: 50%;
+    z-index: 4;
+}
+.all .col2 .story p{
+    text-align: center;
+    margin-top: 20px;
+}
+.profile2 {
+    position: relative;
+}
+.profile2 .sec{
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 3px solid blue;
+
+}
+.profile2 .full{
+    height: 100%;
+    width: 100%;
+}
+.all .col2 .profile2 p{
+    position: absolute;
+    bottom: 10px;
+    left: 30px;
+    color: white;
+}
+/* end story  */
+/* start what do you think */
+.all .col2  .make-post{
+    margin: 30px 15px 0;
+    width: 100%;
+    background-color: white;
+    border-radius: 15px;
+    /* padding: 5px 30px; */
+        box-shadow: 0 0 5px 5px #ddd;
+}
+.all .col2  .make-post .line{
+    padding: 10px;
+    display: flex ;
+    align-items: center;
+    
+}
+.all .col2  .make-post .line a{
+    margin-top: 10px;
+    margin-right: 10px;
+}
+.all .col2  .make-post .line a img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+.all .col2 .make-post .line input{
+    width: 100%;
+    padding: 5px 20px;
+    height: 40px;
+    border-radius: 15px;
+    border: none;
+    background-color: #ddd;
+}
+.all .col2  .make-post .line input:focus{
+    outline: none;
+}
+.all .col2 .make-post hr{ 
+    margin:10px 28px;
+}
+.all .col2  .make-post ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+.all .col2  .make-post ul li{
+    display: flex;
+        padding: 15px 15px 8px;
+        border-radius: 10px;
+        transition: all 0.2s ease;
+}
+.all .col2 .make-post ul li a i{
+        font-size: 25px;
+    margin-right: 15px;
+}
+.all .col2  .make-post ul li .red i{
+    color: #f3425f;
+}
+.all .col2  .make-post ul li .green i{
+    color: #45bd63;
+}
+.all .col2  .make-post ul li .yellow i{
+    color: #f7b928;
+}
+.all .col2  .make-post ul li:hover {
+    background-color: rgb(217, 215, 215);
+    cursor: pointer;
+}
+/* end what do you think */
+/* stat post  */
+
+.posts .post {
+    margin: 30px 15px 0;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 0 5px 5px #ddd;
+    padding: 3px 15px 8px;
+    width: 100%;
+    
+}
+.posts .post  .top{}
+.posts .post  .top .left{
+        display: flex;
+    justify-content: space-between;
+
+}
+.posts .post  .top .left .image{
+    display: flex;
+    padding-top: 10px;
+}
+.posts .post  .top .left .image img{
+    margin-right: 15px;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+}
+.posts .post  .top .left .image h3{}
+.posts .post  .top .left .image p{
+    margin-top: 5px;
+    font-size: 15px;
+    color: gray;
+    font-weight: 400;
+}
+.posts .post  .top .left i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+.posts .post  .med{}
+.posts .post  .med p{
+    margin: 15px 10px;
+}
+.posts .post  .med  img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+.posts .post hr{
+    margin: 10px 4px;
+}
+.posts .post  .bottom{}
+.posts .post  .bottom ul{
+    display: flex;
+    justify-content: space-around;
+}
+.posts .post  .bottom ul li{
+        display: flex;
+    padding: 10px 20px;
+}
+.posts .post  .bottom ul li a{}
+.posts .post  .bottom ul li a i{
+    color: gray;
+}
+.posts .post  .bottom ul li p{
+        margin-left: 13px;
+}
+/* end post  */
+/* end col2 */
+/* start col3 */
+.all .col3{
+        height: 100vh;
+    overflow: hidden;
+    position: sticky;
+    left: 0;
+    top: 0;
+    padding: 15px 8px;
+    width: 300px;
+    background-color: #f0f2f5;
+    transition: all 0.2s ease;
+    box-shadow: -10px 0px 10px 0px #beb9b957;
+    border-radius: 5px;
+}
+.all .col3:hover{
+    overflow:auto ;
+}
+.all .col3 .sponsored  div{
+        display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    margin-bottom: 30px;
+}
+.all .col3 .sponsored  div img{
+        width: 125px;
+    border-radius: 10px;
+    margin-right: 11px;
+    height: 70px;
+}
+.all .col3 .sponsored  div p{
+    max-width: 100px;
+    font-weight: bold;
+}
+
+.all .col3 .contact{}
+.all .col3 .contact .header{
+        display: flex;
+    justify-content: space-between;
+    align-items: center;
+        margin-bottom: 25px;
+}
+.all .col3 .contact p{
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: capitalize;
+    color: gray;
+}
+.all .col3 .contact .icons{
+    margin-right: 30px;
+}
+.all .col3 .contact .icons i{
+        margin: 5px;
+}
+.all .col3 .contact ul{}
+.all .col3 .contact ul li{
+    display: flex;
+    align-items: center;
+    padding: 8px 10px;
+    margin-bottom: 15px;
+    transition:all 0.2s ease;
+    border-radius: 10px;
+}
+.all .col3 .contact ul li:hover{
+    background-color: rgb(183, 181, 181);
+}
+.all .col3 .contact ul li img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.all .col3 .contact ul li  p{
+    font-size: 15px;
+    font-weight: 300;
+    text-transform: lowercase;
+}
+.all .col3 .contact ul li:hover p{
+        color: black;
+}
+/* end col3 */
+/* end all section  */
